@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:#e9e1e1;
+    --primary-color: #041575;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+/* start with the product section */
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.page .search{
+    display: flex;
+    gap: 6px;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0.1);
+}
+/* how to style the search input in css */
+.page .search input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 44px;
+    font-size: 23px;
+    width: 100%;
+}
+.search span{
+    padding-right: 12px;
+    font-size: 23px;
+
+}
+.page .products{
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: repeat(auto-fill minmax(300px, 1fr)); */
+    padding-top: 30px;
+    width: 100%;
+    gap: 15px;
+}
+
+.products .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 12px;
+    /* width: 400px; */
+    transition: 0.4s all ease-in;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0.1);
+}
+.products .card:hover{
+    transform: translateY(-8px);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0.1); */
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.products .card .picture{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+.products .card .btn{
+    font-size: 15px;
+    border-radius: 6px;
+}
+.pname{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.decs{
+    margin-bottom: 12px;
+}
+.btn{
+    padding: 12px 23px;
+    cursor: pointer;
+    margin-top: 4px;
+    background-color: rgb(7, 7, 48);
+    border: none;
+    outline: none;
+    color: white;
+    transition: 1s all ease-in;
+}
+.btn:hover{
+    background-color: #3249cc;
+}
+
+/* syntax of media querries in css */
+@media (max-width:1080px){
+    /* apply this style */
+    body{
+        background-color: red;
+    }
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+    .products .card .pname{
+        color: red;
+    }
+}
+@media (max-width:780px){
+    /* apply this style */
+    body{
+        background-color: red;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+    p{
+        color: black;
+        font-weight: bold;
+    }
+
+}
+
+.navbar{
+    display: flex;
+    gap: 80px;
+    background-color: white;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0.1);
+}
+.navbar .hrs{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.link1{
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.navbar .seed{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(102, 32, 102);
+}
+.link{
+    padding: 2px 7px;
+    text-decoration: none;
+}
+.btn{
+    font-size: 22px;
+    border-radius: 5px;
+}
+.link:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    color: rgb(39, 2, 39);
+}
+.link:active{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+.link1:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+.link1:active{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(73 44 44);
+    color: #000000;
+    gap: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+    width: 100%;
+
+}
+.sidebar li{
+    width: 100%;
+}
+/* setting up variables in css */
