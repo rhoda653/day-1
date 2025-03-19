@@ -221,4 +221,85 @@ body{
 .sidebar li{
     width: 100%;
 }
+
+.footer{
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    background-color: rgb(1, 1, 49);
+    color: #e9e1e1;
+    height: 250px;
+    margin-top: 25px;
+}
+.container1 .about{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5px;
+}
+.container1 .seed{
+    width: 350px;
+    padding-bottom: 5px;
+}
+.container2 a{
+    text-decoration: none;
+    color: white;
+    line-height: 20px;
+}
+.last{
+    flex: 1;
+}
+.container1{
+    flex: 1;
+}
+.container2{
+    flex: 1;
+}
+.last .news{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5px;
+}
+.container2 .title{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5px;
+}
+.last .email .btn{
+    background-color: #0a175e;
+    height: 40px;
+    font-size: 15px;
+    transition: 1s all ease-in;
+}
+.last .btn:hover{
+    background-color: #3249cc;
+}
+.last .email input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 44px;
+    font-size: 15px;
+    width: 60%;
+    border-radius: 5px;
+}
+.under{
+    background-color: rgba(1 1 49);
+    color: white;
+    text-align: center;
+}
+.container1 .butt{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50px;
+    padding-top: 15px;
+    gap: 5px;
+    background-color: rgba(1 1 49);
+}
+.container1 .butt img{
+    background-color: rgba(1 1 49);
+    border: none;
+    outline: none;
+    display: block;
+}
 /* setting up variables in css */
