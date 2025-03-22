@@ -270,7 +270,7 @@ body{
     font-size: 15px;
     transition: 1s all ease-in;
 }
-.last .btn:hover{
+.last .email.btn:hover{
     background-color: #3249cc;
 }
 .last .email input{

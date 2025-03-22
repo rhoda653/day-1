@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link ref="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="seed">Seed Woc Frontend Market</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <div class="hrs">
+            <li onclick=hidesidebar()><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>></a>
+            <a href="./index.html" class="link">Home</a>
+            <a href="products" class="link">Products</a>
+            <a href="categories" class="link">Categories</a>
+            <a href="designs" class="link">Designs</a>
+            <a href="./about.html" class="link">About</a>
+            <a href="contacts" class="link">Contacts</a>
+            <!-- <button class="btn">Login</button> -->
+        </div>
+        <div class="right">
+           <a href="card" class="link1">🛒Cart</a>
+           <button class="btn">Login</button>
+           <li class="menubutt" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </div>
+    
+    </div>
+    
+    
+    
+        <script scr="script.js">
+            function showsidebar(){
+                const sidebar = document.queryselector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.queryselector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    
+        <div class="footer">
+            <div class="container1">
+                <div class="about">About Us</div>
+                <p class="seed">Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Cum, illo! Lorem ipsum dolor sit amet.</p>
+                <div class="num">📞  123-456-789</div>
+                <div class="email">✉️  info@seedwoc.com</div>
+                <div class="butt">
+                    <button><img src="./images/facebook.png" alt="" class="butt1"></button>
+                    <button><img src="./images/instagram.png" alt=""></button>
+                    <button><img src="./images/dribbble.png" alt=""></button>
+                    <button><img src="./images/linkedin.png" alt=""></button>
+                </div>
+    
+            </div>
+            <div class="container2">
+                <div class="title">Quick Links</div>
+                <li><a href=""> Home</a></li>
+                <li><a href="">Products</a></li>
+                <li> <a href="">categories</a></li>
+                <li><a href="">Deals </a></li>
+                <li><a href="">support</a></li>
+    
+            </div>
+            <div class="last">
+            <div class="news">Newsletter</div>
+            <div class="sub">subscribe to get updates on new products and special offers.</div>
+            <div class="email">
+                <input type="text" placeholder="enter your email.....">
+                <button class="btn">Subcribe</button>
+            </div>
+            </div>
+    
+        </div>
+        <div class="under">@2025 Seed Woc Frontend Market All Right reserved</div>
+    
+    </body>
+    </html> 
+</body>
+</html>
