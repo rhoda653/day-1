@@ -1,0 +1,133 @@
+*{
+    padding: 0;;
+    margin: 0;;
+    box-sizing: border-box;
+}
+
+.Hero{
+    background-image: url("./market.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.textContainer{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.textContainer h1{
+    text-align: center;
+    font-size: 52px;
+
+}
+.textContainer p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.textContainer .btn{
+    padding: 12px;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 0.5s all ease-in;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid orangered;
+}
+
+.popup{
+    z-index: 10;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.popup-content{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 12px 12px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    padding: 30px;
+}
+.popup-content .close-btn{
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    background-color: #ff6b6b;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.popup-content .close-btn:hover{
+    background-color: transparent;
+    border: 1px solid #ff6b6b;
+    color: #ff6b6b;
+}
+.form-group{
+    margin-bottom: 18px;
+    align-items: center;
+    margin-top: 18px;
+    
+}
+.form-group label{
+    display: block;
+}
+.form-group input{
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.btn{
+    padding: 12px;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    border: none;
+    transition: 0.5s all ease-in;
+    
+}  
+
