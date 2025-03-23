@@ -23,22 +23,23 @@
         <div class="popup-content">
             <span class="close-btn" id="close-btn">&times</span>
             <h2 class="form-title">signUp to iws market</h2>
-            <form action="" class="form">
+            <form action="./../index.html" class="form" id="formContainer">
                 <div class="form-group">
                     <label for="username">username</label>
-                    <input type="text" placeholder="username" id="username">
+                    <input type="text" placeholder="username" id="username" required>
                 </div>
                 <div class="form-group">
                     <label for="password">password</label>
-                    <input type="text" placeholder="password" id="password">
+                    <input type="password" placeholder="password" id="password" required>
+                    <span clas="toggle-password" onclick ="togglepassword()">🙈</span>
                 </div>
                 <div class="form-group">
                     <label for="confirm password">confirm password</label>
-                    <input type="text" placeholder="confirm password" id="confirm password">
+                    <input type="password" placeholder="confirmpassword" id="confirmpassword" required>
                 </div>
                 <div class="form-group">
                     <label for="email">email</label>
-                    <input type="text" placeholder="email" id="email">
+                    <input type="email" placeholder="email" id="email" required>
                 </div>
 
                 <button type="submit" class="btn">Get Started</button>
